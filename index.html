@@ -7,11 +7,11 @@
     <meta name="author" content="laohanme"/>
 	<meta name="contact" content=""/>
     <!--bootstrap 4 & font-awesome-->
-    <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bootstrap4/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" >
+    <link rel="stylesheet" href="static/bootstrap4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/bootstrap4/font-awesome.min.css">
+    <link rel="stylesheet" href="static/font/roboto.css" >
     <!--include custom css-->
-    <link rel="stylesheet" href="bootstrap4/custom_css/custom_css.css">
+    <link rel="stylesheet" href="static/custom_css/custom_css.css">
     <title>LaoHan</title>
 </head>
 
@@ -22,52 +22,47 @@
 	    <hr>
 		<ul class="nav nav-pills nav-justified" id="pills-tab" role="tablist">
 		    <li class="nav-item">
-		        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-expanded="true">About me</a>
+		        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#me" role="tab" aria-controls="pills-home" aria-expanded="true">me</a>
 		    </li>
 		    <li class="nav-item">
-		        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-expanded="true">Profile</a>
+		        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-expanded="true">do</a>
 		    </li>		    
 		    <li class="nav-item">
-		        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-expanded="true">Profile</a>
+		        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-expanded="true">story</a>
 		    </li>		    
 		    <li class="nav-item">
-		        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-expanded="true">Profile</a>
+		        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-expanded="true">social</a>
 		    </li>
 		</ul>
 		<div class="tab-content" id="pills-tabContent">
-		    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+		    <div class="tab-pane fade show active" id="me" role="tabpanel" aria-labelledby="me">
 		    	<br>
-		    	<h3>Under Maintenance</h3>
-		    	<h4 class="text-muted">Comming Soon</h4>
-		    	<img src="media/images/under_maintenance.png" class="img-fluid" alt="">
+		    	<div w3-include-html="//www.laohan.me/under_maintenance.html"></div>
 		    </div>
 		    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
 		    	<br>
-		    	<h3>Under Maintenance</h3>
-		    	<h4 class="text-muted">Comming Soon</h4>
-		    	<img src="media/images/under_maintenance.png" class="img-fluid" alt="">
+		    	<div w3-include-html="//www.laohan.me/under_maintenance.html"></div>
 		    </div>
 		    <div class="tab-pane fade" id="pills-dropdown1" role="tabpanel" aria-labelledby="pills-dropdown1-tab">
 		    	<br>
-		    	<h3>Under Maintenance</h3>
-		    	<h4 class="text-muted">Comming Soon</h4>
-		    	<img src="media/images/under_maintenance.png" class="img-fluid" alt="">
+		    	<div w3-include-html="//www.laohan.me/under_maintenance.html"></div>
 		    </div>
 		    <div class="tab-pane fade" id="pills-dropdown2" role="tabpanel" aria-labelledby="pills-dropdown2-tab">
 		    	<br>
-		    	<h3>Under Maintenance</h3>
-		    	<h4 class="text-muted">Comming Soon</h4>
-		    	<img src="media/images/under_maintenance.png" class="img-fluid" alt="">
+		    	<div w3-include-html="//www.laohan.me/under_maintenance.html"></div>
 		    </div>
 		</div>
 
 	</div>
-	<!--Jquery first then other js-->
-	<script src="bootstrap4/js/jquery-3.2.1.slim.min.js"></script>
-	<script src="bootstrap4/js/popper.min.js"></script>
-	<script src="bootstrap4/js/bootstrap.min.js"></script>
+	<!--jquery first then other js-->
+	<script src="static/bootstrap4/js/jquery-3.2.1.slim.min.js"></script>
+	<script src="static/bootstrap4/js/popper.min.js"></script>
+	<script src="static/bootstrap4/js/bootstrap.min.js"></script>
+	<script src="static/w3/w3.min.js"></script>
 	<!--include custom js-->
+	<script src="static/custom_js/custom_js.js"></script>
 	<script>
+		console.log('http://www.laohan.me')
 	</script>
 </body>
 </html>
