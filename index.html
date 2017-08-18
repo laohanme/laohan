@@ -9,6 +9,8 @@
     <!--bootstrap 4 & font-awesome-->
     <link rel="stylesheet" href="static/bootstrap4/css/bootstrap.min.css">
     <link rel="stylesheet" href="static/bootstrap4/font-awesome.min.css">
+    <link rel="stylesheet" href="static/owl-carousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="static/owl-carousel/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="static/font/roboto.css" >
     <!--include custom css-->
     <link rel="stylesheet" href="static/custom_css/custom_css.css">
@@ -25,13 +27,13 @@
 		        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#me" role="tab" aria-controls="pills-home" aria-expanded="true">me</a>
 		    </li>
 		    <li class="nav-item">
-		        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-expanded="true">do</a>
+		        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#do" role="tab" aria-controls="pills-profile" aria-expanded="true">do</a>
 		    </li>		    
 		    <li class="nav-item">
-		        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-expanded="true">story</a>
+		        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#story" role="tab" aria-controls="pills-profile" aria-expanded="true">story</a>
 		    </li>		    
 		    <li class="nav-item">
-		        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-expanded="true">social</a>
+		        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#social" role="tab" aria-controls="pills-profile" aria-expanded="true">social</a>
 		    </li>
 		</ul>
 		<div class="tab-content" id="pills-tabContent">
@@ -39,15 +41,72 @@
 		    	<br>
 		    	<div w3-include-html="http://www.laohan.me/whoami.html"></div>
 		    </div>
-		    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+		    <div class="tab-pane fade" id="do" role="tabpanel" aria-labelledby="pills-profile-tab">
+		    	<br>
+		    	<div class="owl-carousel">
+				  <div>
+				  	<div class="card" style="width: 20rem;">
+					  <img class="card-img-top" src="media/images/under_maintenance.png" alt="Card image cap">
+					  <div class="card-body">
+					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					  </div>
+					</div>
+				  </div>
+				  <div>
+				  	<div class="card" style="width: 20rem;">
+					  <img class="card-img-top" src="media/images/under_maintenance.png" alt="Card image cap">
+					  <div class="card-body">
+					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					  </div>
+					</div>
+				  </div>
+				  <div>				  	
+				  	<div class="card" style="width: 20rem;">
+					  <img class="card-img-top" src="media/images/under_maintenance.png" alt="Card image cap">
+					  <div class="card-body">
+					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					  </div>
+					</div>
+				  </div>
+				  <div>
+				  	<div class="card" style="width: 20rem;">
+					  <img class="card-img-top" src="media/images/under_maintenance.png" alt="Card image cap">
+					  <div class="card-body">
+					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					  </div>
+					</div>
+				  </div>
+				  <div>
+  				  	<div class="card" style="width: 20rem;">
+					  <img class="card-img-top" src="media/images/under_maintenance.png" alt="Card image cap">
+					  <div class="card-body">
+					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					  </div>
+					</div>
+				  </div>
+				  <div>
+				  	<div class="card" style="width: 20rem;">
+					  <img class="card-img-top" src="media/images/under_maintenance.png" alt="Card image cap">
+					  <div class="card-body">
+					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					  </div>
+					</div>
+				  </div>
+				  <div>
+				  	<div class="card" style="width: 20rem;">
+					  <img class="card-img-top" src="media/images/under_maintenance.png" alt="Card image cap">
+					  <div class="card-body">
+					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					  </div>
+					</div>
+				  </div>
+				</div>
+		    </div>
+		    <div class="tab-pane fade" id="story" role="tabpanel" aria-labelledby="pills-dropdown1-tab">
 		    	<br>
 		    	<div w3-include-html="http://www.laohan.me/under_maintenance.html"></div>
 		    </div>
-		    <div class="tab-pane fade" id="pills-dropdown1" role="tabpanel" aria-labelledby="pills-dropdown1-tab">
-		    	<br>
-		    	<div w3-include-html="http://www.laohan.me/under_maintenance.html"></div>
-		    </div>
-		    <div class="tab-pane fade" id="pills-dropdown2" role="tabpanel" aria-labelledby="pills-dropdown2-tab">
+		    <div class="tab-pane fade" id="social" role="tabpanel" aria-labelledby="pills-dropdown2-tab">
 		    	<br>
 		    	<div w3-include-html="http://www.laohan.me/under_maintenance.html"></div>
 		    </div>
@@ -58,11 +117,15 @@
 	<script src="static/bootstrap4/js/jquery-3.2.1.slim.min.js"></script>
 	<script src="static/bootstrap4/js/popper.min.js"></script>
 	<script src="static/bootstrap4/js/bootstrap.min.js"></script>
+	<script src="static/owl-carousel/js/owl.carousel.min.js"></script>
 	<script src="static/w3/w3.min.js"></script>
 	<!--include custom js-->
 	<script src="static/custom_js/custom_js.js"></script>
 	<script>
 		console.log('http://www.laohan.me')
+		$(document).ready(function(){
+		  $(".owl-carousel").owlCarousel();
+		});
 	</script>
 </body>
 </html>
