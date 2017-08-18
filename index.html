@@ -24,16 +24,16 @@
 	    <hr>
 		<ul class="nav nav-pills nav-justified bordercustom" id="pills-tab" role="tablist">
 		    <li class="nav-item">
-		        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#me" role="tab" aria-controls="pills-home" aria-expanded="true">me</a>
+		        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#me" role="tab" aria-controls="myhome" aria-expanded="true">me</a>
 		    </li>
 		    <li class="nav-item">
-		        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#do" role="tab" aria-controls="pills-profile" aria-expanded="true">do</a>
+		        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#do" role="tab" aria-controls="mydo" aria-expanded="true">do</a>
 		    </li>		    
 		    <li class="nav-item">
-		        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#story" role="tab" aria-controls="pills-profile" aria-expanded="true">story</a>
+		        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#story" role="tab" aria-controls="mystory" aria-expanded="true">story</a>
 		    </li>		    
 		    <li class="nav-item">
-		        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#social" role="tab" aria-controls="pills-profile" aria-expanded="true">social</a>
+		        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#social" role="tab" aria-controls="mysocial" aria-expanded="true">social</a>
 		    </li>
 		</ul>
 		<div class="tab-content" id="pills-tabContent">
@@ -43,70 +43,13 @@
 		    </div>
 		    <div class="tab-pane fade" id="do" role="tabpanel" aria-labelledby="pills-profile-tab">
 		    	<br>
-		    	<div class="owl-carousel">
-				  <div>
-				  	<div class="card" style="width: 20rem;">
-					  <img class="card-img-top" src="media/images/under_maintenance.png" alt="Card image cap">
-					  <div class="card-body">
-					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					  </div>
-					</div>
-				  </div>
-				  <div>
-				  	<div class="card" style="width: 20rem;">
-					  <img class="card-img-top" src="media/images/under_maintenance.png" alt="Card image cap">
-					  <div class="card-body">
-					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					  </div>
-					</div>
-				  </div>
-				  <div>				  	
-				  	<div class="card" style="width: 20rem;">
-					  <img class="card-img-top" src="media/images/under_maintenance.png" alt="Card image cap">
-					  <div class="card-body">
-					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					  </div>
-					</div>
-				  </div>
-				  <div>
-				  	<div class="card" style="width: 20rem;">
-					  <img class="card-img-top" src="media/images/under_maintenance.png" alt="Card image cap">
-					  <div class="card-body">
-					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					  </div>
-					</div>
-				  </div>
-				  <div>
-  				  	<div class="card" style="width: 20rem;">
-					  <img class="card-img-top" src="media/images/under_maintenance.png" alt="Card image cap">
-					  <div class="card-body">
-					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					  </div>
-					</div>
-				  </div>
-				  <div>
-				  	<div class="card" style="width: 20rem;">
-					  <img class="card-img-top" src="media/images/under_maintenance.png" alt="Card image cap">
-					  <div class="card-body">
-					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					  </div>
-					</div>
-				  </div>
-				  <div>
-				  	<div class="card" style="width: 20rem;">
-					  <img class="card-img-top" src="media/images/under_maintenance.png" alt="Card image cap">
-					  <div class="card-body">
-					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					  </div>
-					</div>
-				  </div>
-				</div>
+		    	<div w3-include-html="http://www.laohan.me/do.html"></div>
 		    </div>
-		    <div class="tab-pane fade" id="story" role="tabpanel" aria-labelledby="pills-dropdown1-tab">
+		    <div class="tab-pane fade" id="story" role="tabpanel" aria-labelledby="mystory">
 		    	<br>
 		    	<div w3-include-html="http://www.laohan.me/under_maintenance.html"></div>
 		    </div>
-		    <div class="tab-pane fade" id="social" role="tabpanel" aria-labelledby="pills-dropdown2-tab">
+		    <div class="tab-pane fade" id="social" role="tabpanel" aria-labelledby="mysocial">
 		    	<br>
 		    	<div w3-include-html="http://www.laohan.me/under_maintenance.html"></div>
 		    </div>
@@ -123,28 +66,6 @@
 	<script src="static/custom_js/custom_js.js"></script>
 	<script>
 		console.log('http://www.laohan.me')
-		$(document).ready(function(){
-		  $(".owl-carousel").owlCarousel({
-				loop:true,
-			    margin:10,
-			    responsiveClass:true,
-			    responsive:{
-			        0:{
-			            items:1,
-			            nav:true
-			        },
-			        600:{
-			            items:3,
-			            nav:false
-			        },
-			        1000:{
-			            items:3,
-			            nav:true,
-			            loop:false
-			        }
-			    }
-		  });
-		});
 	</script>
 </body>
 </html>
