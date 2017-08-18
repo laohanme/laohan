@@ -20,3 +20,6 @@ body{
 	background-color: #ff6b81;
 	border-radius: 8px;
 }
+.owl-carousel .owl-dot, .owl-carousel .owl-nav .owl-next, .owl-carousel .owl-nav .owl-prev{
+	display: none;
+}
