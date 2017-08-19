@@ -1,16 +1,19 @@
 body{
 	font-family: 'Roboto', sans-serif;
     margin-top: 5em;
+    background-color: #F8F9FA;
 }
-.nav-pills .nav-link.active, .show>.nav-pills .nav-link{
-    background-color: #ff2d55;
-	border-radius: 7px;
-}
-.bordercustom{
+/*my custom*/
+.border_custom{
 	border:1px;
     border-style: solid;
     border-radius: 8px;
     border-color: #ff2d55;
+}
+/*important*/
+.nav-pills .nav-link.active, .show>.nav-pills .nav-link{
+    background-color: #ff2d55;
+	border-radius: 7px;
 }
 .nav-link{
 	color: #ff2d55;
