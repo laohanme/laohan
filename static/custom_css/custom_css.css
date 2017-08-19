@@ -10,6 +10,22 @@ body{
     border-radius: 8px;
     border-color: #ff2d55;
 }
+.btn_custom{;
+	color: #ff2d55;
+	border-radius: 8px;
+	border-color: #ff2d55;
+}
+.btn_custom:hover{
+	background-color: #ff2d55;
+	border-radius: 8px;
+	border-color: #ff2d55;
+}
+.btn-outline-primary.disabled, .btn-outline-primary:disabled{
+	color: #ff2d55;
+}
+.btn-outline-primary.disabled, .btn-outline-primary:hover{
+	background-color: white;
+}
 /*important*/
 .nav-pills .nav-link.active, .show>.nav-pills .nav-link{
     background-color: #ff2d55;
