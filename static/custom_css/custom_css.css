@@ -1,6 +1,7 @@
 body{
 	font-family: 'Roboto', sans-serif;
-    margin-top: 5em;
+    margin-top: 3em;
+    margin-bottom: 5em;
     background-color: #F8F9FA;
 }
 /*my custom*/
@@ -23,7 +24,7 @@ body{
 .btn-outline-primary.disabled, .btn-outline-primary:disabled{
 	color: #ff2d55;
 }
-.btn-outline-primary.disabled, .btn-outline-primary:hover{
+.disabled:hover{
 	background-color: white;
 }
 /*important*/
