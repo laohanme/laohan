@@ -6,6 +6,7 @@ $(document).ready(function(){
 	    responsive:{
 	        0:{
 	            items:2,
+	            margin:300,
 	            nav:true
 	        },
 	        600:{
