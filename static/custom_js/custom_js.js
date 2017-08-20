@@ -11,6 +11,7 @@ $(document).ready(function(){
 	        },
 	        600:{
 	            items:3,
+	            margin:400,
 	            nav:false
 	        },
 	        1000:{
