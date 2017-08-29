@@ -4,18 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <meta name="author" content="laohanme"/>
-	<meta name="contact" content=""/>
-	<link rel="stylesheet prefetch" href="static/pace_loader/pace.min.css">
-    <script src="static/pace_loader/pace.min.js"></script>
-    <!--bootstrap 4 & font-awesome-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="static/bootstrap4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="static/owl_carousel/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="static/owl_carousel/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="static/font/roboto.css" >
-    <!--include custom css-->
-    <link rel="stylesheet" href="static/custom_css/custom_css.css">
     <title>LaoHan 404</title>
 
     <!--google analytics-->
@@ -29,17 +17,76 @@
 	  ga('send', 'pageview');
 	</script>
     <style>
-    	body{
-    		background-image: url('media/images/bg.png')
-    	}
+a {
+	color: inherit;
+}
+
+.terminal {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 60%;
+	padding: 0 20%;
+	background-color: #010101;
+	color: #00ee00;
+	font-family: consolas;
+	word-wrap: break-all;
+	
+	#title {
+		text-align: center;
+		width: 100%;
+		font-size: 6em;
+	}
+	
+	.text {
+		display: inline-block;
+	}
+	
+	.cursor {
+		display: inline;
+		animation: blink .75s linear infinite;
+	}
+	
+	.c {
+		position: absolute;
+		bottom: 10%;
+		right: 10%;
+		
+		.hearth {
+			display: inline !important;
+		}
+	}
+}
+
+@keyframes blink {
+	0% {
+		opacity: 0;
+	} 33% {
+		opacity: 1;
+	} 66% {
+		opacity: 1;
+	} 100% {
+		opacity: 0;
+	}
+}
     </style>
 </head>
 
 <body>
-	<div class="container text-center">
-		<h1>404</h1>
-		<h1>Hey Bro? Don't Cincai Cincai</h1><hr>
-		<h2>www.laohan.me</h2>
+	<div class='terminal'>
+	  <h1 id='title'>404</h1>
+	  <div class='text' id='text_1'></div>
+	  <div class='text' id='text_2'></div>
+	  <div class='cursor'>_</div>
+	  <div class='c'>
+	    Made with
+	    <span class='heart'>&hearts;</span>
+	    by
+	    <a href='https://m.me/laohanme' title='Follow me on codepen'>
+	      LaoHan
+	    </a>
+	  </div>
 	</div>
 	<!--Jquery first then other js-->
 	<script src="static/bootstrap4/js/jquery-3.2.1.slim.min.js"></script>
@@ -47,7 +94,24 @@
 	<script src="static/bootstrap4/js/bootstrap.min.js"></script>
 	<!--include custom js-->
 	<script>
-		console.log('404 Not Found')
+		console.log('404 Not Found');
+		var text_1 = 'This link is broken or unidentified...',
+		text_2 = 'Please inform the webmaster...';
+		repeat(text_1, 1);
+		setTimeout(function() {
+			repeat(text_2, 2);
+		}, text_1.length * 100 + 1000);
+
+		function repeat(text, n) {
+			var i = 0,
+			repeatable = setInterval(function() {
+					$('#text_'+n).text($('#text_'+n).text() + text[i]);
+					i++;
+					if (i >= text.length) {
+							clearInterval(repeatable);
+					}
+			}, 100);
+		}
 	</script>
 </body>
 </html>
