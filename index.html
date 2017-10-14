@@ -93,7 +93,8 @@
 					                <p class="card-text">
 					                	<h4><b>Mobile Apps</b></h4>
 					                	<h6 class="text-muted">iOS & Android</h6><br>
-					                	<button class="btn btn-block btn-outline-primary btn_custom disabled" disabled>coming soon</button></p>
+					                	<button class="btn btn-block btn-outline-primary btn_custom disabled" disabled>coming soon</button>
+					                </p>
 					            </div>
 					        </div>
 					    </div>
@@ -101,7 +102,11 @@
 					        <div class="card" style="width: 20rem;">
 					            <img class="card-img-top" src="media/images/under_maintenance.png" alt="Card image cap">
 					            <div class="card-body">
-					                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					                <p class="card-text">
+					                	<h4><b>Hello World</b></h4>
+					                	<h6 class="text-muted">Coming Soon</h6><br>
+					                	<button class="btn btn-block btn-outline-primary btn_custom disabled" disabled>coming soon</button>
+					                </p>
 					            </div>
 					        </div>
 					    </div>
@@ -109,7 +114,11 @@
 					        <div class="card" style="width: 20rem;">
 					            <img class="card-img-top" src="media/images/under_maintenance.png" alt="Card image cap">
 					            <div class="card-body">
-					                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					                <p class="card-text">
+					                	<h4><b>Hello World</b></h4>
+					                	<h6 class="text-muted">Coming Soon</h6><br>
+					                	<button class="btn btn-block btn-outline-primary btn_custom disabled" disabled>coming soon</button>
+					                </p>
 					            </div>
 					        </div>
 					    </div>
@@ -117,7 +126,11 @@
 					        <div class="card" style="width: 20rem;">
 					            <img class="card-img-top" src="media/images/under_maintenance.png" alt="Card image cap">
 					            <div class="card-body">
-					                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					                <p class="card-text">
+					                	<h4><b>Hello World</b></h4>
+					                	<h6 class="text-muted">Coming Soon</h6><br>
+					                	<button class="btn btn-block btn-outline-primary btn_custom disabled" disabled>coming soon</button>
+					                </p>
 					            </div>
 					        </div>
 					    </div>
@@ -125,7 +138,11 @@
 					        <div class="card" style="width: 20rem;">
 					            <img class="card-img-top" src="media/images/under_maintenance.png" alt="Card image cap">
 					            <div class="card-body">
-					                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					                <p class="card-text">
+					                	<h4><b>Hello World</b></h4>
+					                	<h6 class="text-muted">Coming Soon</h6><br>
+					                	<button class="btn btn-block btn-outline-primary btn_custom disabled" disabled>coming soon</button>
+					                </p>
 					            </div>
 					        </div>
 					    </div>
@@ -148,6 +165,19 @@
 		console.log('http://www.laohan.me');
 	</script>
 	<script>
+	// request permission on page load
+	document.addEventListener('DOMContentLoaded', function () {
+		if (Notification.permission !== "granted")
+			Notification.requestPermission();
+	});
+
+		if (!Notification) {
+			alert('Desktop notifications not available in your browser. Try ohter browser.'); 
+			return;
+	}
+
+	</script>
+	<script>
 		// Enable pusher logging - don't include this in production
 		//Pusher.logToConsole = true;
 
@@ -160,7 +190,19 @@
 		channel.bind('my-event', function(data) {
 		  //alert(data.message);
 		  var noti = data.message;
-		  $("#push").text(noti);
+		  //$("#push").text(noti);
+
+		  	//browser notification
+			var notification = new Notification('laohan.me', {
+				icon: 'media/images/welcome_icon.png',
+				body: noti,
+			});
+
+
+			/*notification.onclick = function () {
+				window.open("");      
+			};*/
+
 		});
 	</script>
 </body>
