@@ -194,11 +194,10 @@
 			Notification.requestPermission();
 		else {
 
-			var notification = new Notification('LaoHan Send You A Message', {
+			var notification = new Notification(data.title, {
 				icon: 'media/images/welcome_icon.png',
-				body: noti,
+				body: data.message
 			});
-
 
 			// notification.onclick = function () {
 			// 	window.open("");      
